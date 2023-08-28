@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+.hero-headbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 16px;
+    background-image: url("../images/hero-furniture1-mob.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 717px;
+    /* width: fit-content; */
+}
+
+.furniture1-img,
+.furniture2-img,
+.furniture3-img {
+    display: none;
+}
+
+.hero-title {
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #0a224a;
+    margin-bottom: 14px;
+    margin-top: 140px;
+}
+
+.hero-btn-text {
+    max-width: 343px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0a224a;
+    outline-offset: -2px;
+    margin-top: 14px;
+}
+
+.hero-subscribe-btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.33;
+
+    display: block;
+
+    min-width: 224px;
+    height: 50px;
+
+    background-color: #0a224a;
+    cursor: pointer;
+    color: #ffffff;
+
+    border: none;
+    padding: 13px 72px;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 28px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-headbox {
+    background-image: url(../images/hero-furniture2-mob-x2.jpg);
+  }
+}
+@media (min-width: 768px) {
+    .hero-title {
+        position: absolute;
+        margin-top: 0;
+        max-width: 768px;
+        font-size: 50px;
+    }
+
+    .hero-headbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: none;
+        margin: auto;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .hero-headbox-images {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .furniture1-img,
+    .furniture2-img {
+        display: initial;
+    }
+
+    .furniture1-img {
+        background-image: url("../images/hero-furniture1-tab.jpg");
+        background-size: cover;
+        width: 308px;
+        height: 329px;
+        align-self: flex-end;
+    }
+
+    .furniture2-img {
+        background-image: url("../images/hero-furniture2-tab.jpg");
+        background-size: cover;
+        width: 364px;
+        height: 531px;
+    }
+
+    .hero-btn-text {
+        width: 312px;
+        font-size: 18px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .furniture1-img {
+            background-image: url("../images/hero-furniture1-tab-x2.jpg");
+        }
+
+        .furniture2-img {
+            background-image: url("../images/hero-furniture2-tab-x2.jpg");
+        }
+    }
+}
+
+@media (min-width: 1158px) {
+    .hero-headbox {
+        display: flex;
+        flex-direction: row;
+        max-width: 1440px;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .hero-headbox-images {
+        gap: 25px;
+    }
+
+    .furniture1-img {
+        background-image: url("../images/hero-furniture1-desk.jpg");
+        /* background-size: cover; */
+        width: 308px; 
+        align-self: flex-end;
+    }
+
+    .furniture2-img {
+        background-image: url("../images/hero-furtniture2-desk.jpg");
+        background-size: cover;
+        width: 364px;
+    }
+
+    .hero-headbox-block {
+        margin-left: 25px;
+    }
+
+    .furniture3-img {
+        display: block;
+        width: 312px;
+        height: 337px;
+        background-size: cover;
+        background-image: url("../images/hero-furniture3-desk.jpg");
+    }
+
+    .hero-btn-text {
+        margin-top: 59px;
+    }
+
+    .hero-subscribe-btn {
+        margin-top: 30px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .furniture1-img {
+            background-image: url("../images/hero-furniture1-x2.jpg");
+        }
+
+        .furniture2-img {
+            background-image: url("../images/hero-furniture2-x2.jpg");
+        }
+
+        .furniture3-img {
+            background-image: url("../images/hero-furniture3-x2.jpg");
+        }
+    }
+}
+
+.hero-subscribe-btn:hover,
+.hero-subscribe-btn:focus {
+    background-color: #0a2280;
+}
